@@ -1,0 +1,196 @@
+{
+	"_version": "1.1.0",
+	"sap.app": {
+		"_version": "1.1.0",
+		"id": "lightsapp2",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"resources": "resources.json",
+		"ach": "ach",
+		"sourceTemplate": {
+			"id": "servicecatalog.connectivityComponent",
+			"version": "0.0.0"
+		},
+		"dataSources": {
+			"mainService": {
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/metadata.xml"
+				},
+				"uri": "localService/metadata.xml"
+			}
+		}
+	},
+	"sap.ui": {
+		"_version": "1.1.0",
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_bluecrystal"
+		]
+	},
+	"sap.ui5": {
+		"_version": "1.1.0",
+		"rootView": {
+			"viewName": "lightsapp2.view.View1",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "lightsapp2.i18n.i18n"
+				}
+			},
+			"": {
+				"dataSource": "mainService"
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "lightsapp2.view",
+				"controlAggregation": "pages",
+				"controlId": "idAppControl"
+			},
+			"targets": {
+				"TargetView1": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearAggregation": true,
+					"viewName": "View1"
+				},
+				"Login": {
+					"viewType": "XML",
+					"viewName": "Login"
+				},
+				"dashboard": {
+					"viewType": "XML",
+					"viewName": "dashboard"
+				},
+				"bed": {
+					"viewType": "XML",
+					"viewName": "bed"
+				},
+				"sit": {
+					"viewType": "XML",
+					"viewName": "sit"
+				},
+				"kit": {
+					"viewType": "XML",
+					"viewName": "kit"
+				},
+				"sec": {
+					"viewType": "XML",
+					"viewName": "sec"
+				},
+				"map": {
+					"viewType": "XML",
+					"viewName": "map"
+				}
+			},
+			"routes": [
+				{
+					"name": "Login",
+					"pattern": "Login",
+					"target": [
+						"Login"
+					]
+				},
+				{
+					"name": "dashboard",
+					"pattern": "dashboard",
+					"target": [
+						"dashboard"
+					]
+				},
+				{
+					"name": "bed",
+					"pattern": "bed",
+					"target": [
+						"bed"
+					]
+				},
+				{
+					"name": "sec",
+					"pattern": "sec",
+					"target": [
+						"sec"
+					]
+				},
+				{
+					"name": "kit",
+					"pattern": "kit",
+					"target": [
+						"kit"
+					]
+				},
+				{
+					"name": "sit",
+					"pattern": "sit",
+					"target": [
+						"sit"
+					]
+				},
+				{
+					"name": "map",
+					"pattern": "map",
+					"target": [
+						"map"
+					]
+				},
+				{
+					"name": "View1",
+					"pattern": "View1",
+					"target": [
+						"TargetView1"
+					]
+				}
+			]
+		}
+	},
+	"sap.platform.hcp": {
+		"uri": "webapp",
+		"_version": "1.1.0"
+	}
+}

@@ -1,0 +1,25 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="lightsapp2.controller.sit" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Title">
+				<content>
+				    <FlexBox width="100%" id="box0"/>
+				    <Label text="Please select to turn lights of and on" width="100%" id="label0"/>
+				    <FlexBox width="100%" id="box1">
+				        <items>
+				            <FlexBox width="100%" id="box2"/>
+				            <ActionSelect id="select0" autoAdjustWidth="true">
+				                <items>
+				                    <core:Item text="Turn Off" id="item1"/>
+				                    <core:Item text="Turn on" id="item2"/>
+				                </items>
+				            </ActionSelect>
+				            <FlexBox width="100%" id="box3">
+				            </FlexBox>
+				        </items>
+				    </FlexBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

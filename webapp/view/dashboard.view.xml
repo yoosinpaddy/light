@@ -1,0 +1,47 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="lightsapp2.controller.dashboard" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Title">
+				<content>
+				    <sap.ui.layout:ResponsiveSplitter defaultPane="__pane2" xmlns:sap.ui.layout="sap.ui.layout" id="splitter2" height="5%">
+				        <sap.ui.layout:rootPaneContainer>
+				            <sap.ui.layout:PaneContainer orientation="Vertical" id="container1">
+				                <sap.ui.layout:panes>
+				                    <sap.ui.layout:SplitPane requiredParentWidth="50" id="pane2">
+				                        <sap.ui.layout:content>
+				                            <Panel height="100%" backgroundDesign="Transparent" id="panel2">
+				                                <layoutData>
+				                                    <sap.ui.layout:SplitterLayoutData id="data11"/>
+				                                </layoutData>
+				                            </Panel>
+				                        </sap.ui.layout:content>
+				                    </sap.ui.layout:SplitPane>
+				                    <sap.ui.layout:SplitPane requiredParentWidth="50" id="pane3">
+				                        <sap.ui.layout:content>
+				                            <Panel height="5%" backgroundDesign="Transparent" id="panel3">
+				                                <layoutData>
+				                                    <sap.ui.layout:SplitterLayoutData id="data13"/>
+				                                </layoutData>
+				                            </Panel>
+				                        </sap.ui.layout:content>
+				                    </sap.ui.layout:SplitPane></sap.ui.layout:panes>
+				            </sap.ui.layout:PaneContainer>
+				        </sap.ui.layout:rootPaneContainer>
+				    </sap.ui.layout:ResponsiveSplitter>
+				    <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="grid0">
+				        <sap.ui.layout:content>
+				            <ObjectListItem title="BedRoom Lights" icon="sap-icon://bed" id="item0" detailPress="action" action:wiring="\{'detailPress':\{'navigation':\{'routeName':'bed'\}\},'press':\{'navigation':\{'routeName':'bed'\}\},'detailTap':\{'navigation':\{'routeName':'bed'\}\},'tap':\{'navigation':\{'routeName':'bed'\}\}\}" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" press="action" detailTap="action" tap="action" type="Active"/>
+				            <ObjectListItem title="Security Lights" icon="sap-icon://lightbulb" id="item1" activeIcon="sap-icon://lightbulb" detailPress="action" action:wiring="\{'detailPress':\{'navigation':\{'routeName':'sec'\}\},'press':\{'navigation':\{'routeName':'sec'\}\},'tap':\{'navigation':\{'routeName':'sec'\}\}\}" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" press="action" tap="action" type="Active"/>
+				            <ObjectListItem title="Sitting Room Lights" icon="sap-icon://insurance-house" id="item2" detailPress="action" action:wiring="\{'detailPress':\{'navigation':\{'routeName':'sit'\}\},'tap':\{'navigation':\{'routeName':'sit'\}\},'press':\{'navigation':\{'routeName':'sit'\}\}\}" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" tap="action" press="action" type="Active"/>
+				            <ObjectListItem title="Kitchen Lights" icon="sap-icon://idea-wall" id="item3" detailPress="action" action:wiring="\{'detailPress':\{'navigation':\{'routeName':'kit'\}\},'press':\{'navigation':\{'routeName':'kit'\}\},'tap':\{'navigation':\{'routeName':'kit'\}\}\}" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" press="action" tap="action" type="Active"/></sap.ui.layout:content>
+				    </sap.ui.layout:Grid>
+				    <FlexBox width="100%" id="box0">
+				        <items>
+				        </items>
+				    </FlexBox>
+				    <ObjectListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" title="Our Location" icon="sap-icon://map-2" id="item3_copy" detailPress="action" action:wiring="\{'detailPress':\{'navigation':\{'routeName':'map'\}\},'press':\{'navigation':\{'routeName':'map'\}\},'tap':\{'navigation':\{'routeName':'map'\}\}\}" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" press="action" tap="action" type="Active"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

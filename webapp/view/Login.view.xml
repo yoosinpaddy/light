@@ -1,0 +1,70 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="lightsapp2.controller.Login" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Title">
+				<content>
+				    <Label xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" text="Enter your email and password" width="100%" id="label0" textAlign="Center"/>
+				    <FlexBox xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" width="100%" id="box0"/>
+				    <FlexBox xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" width="100%" id="box1">
+				        <items>
+				            <sap.ui.layout:ResponsiveSplitter defaultPane="__pane0" xmlns:sap.ui.layout="sap.ui.layout" id="splitter0">
+				                <sap.ui.layout:rootPaneContainer>
+				                    <sap.ui.layout:PaneContainer id="container0">
+				                        <sap.ui.layout:panes>
+				                            <sap.ui.layout:SplitPane requiredParentWidth="50" id="pane0">
+				                                <sap.ui.layout:content>
+				                                    <Panel height="100%" backgroundDesign="Transparent" id="panel0">
+				                                        <layoutData>
+				                                            <sap.ui.layout:SplitterLayoutData id="data6"/>
+				                                            
+				                                        </layoutData>
+				                                        <content>
+				                                            <Label text="Email" width="100%" id="label1"/>
+				                                            <FlexBox width="100%" id="box2" height="10px"/>
+				                                            <Label text="Password" width="100%" id="label2"/>
+				                                            </content>
+				                                        </Panel>
+				                                    
+				                                </sap.ui.layout:content>
+				                                
+				                            </sap.ui.layout:SplitPane>
+				                            <sap.ui.layout:SplitPane requiredParentWidth="50" id="pane1">
+				                                <sap.ui.layout:content>
+				                                    <Panel height="100%" backgroundDesign="Transparent" id="panel1">
+				                                        <layoutData>
+				                                            <sap.ui.layout:SplitterLayoutData id="data8"/>
+				                                            
+				                                        </layoutData>
+				                                        <content>
+				                                            <Input xmlns="sap.m" id="input0" type="Email"/>
+				                                            <Input xmlns="sap.m" id="input1" type="Password"/>
+				                                            </content>
+				                                        </Panel>
+				                                    
+				                                </sap.ui.layout:content>
+				                                
+				                            </sap.ui.layout:SplitPane>
+				                            </sap.ui.layout:panes>
+				                        
+				                    </sap.ui.layout:PaneContainer>
+				                    
+				                </sap.ui.layout:rootPaneContainer>
+				                
+				            </sap.ui.layout:ResponsiveSplitter>
+				            
+				        </items>
+				        
+				    </FlexBox>
+				    <FlexBox xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" width="100%" id="box4">
+				        <items>
+				            <FlexBox width="100%" id="box5"/>
+				            <Button xmlns="sap.m" text="Login" id="button0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'dashboard'\}\},'tap':\{'navigation':\{'routeName':'dashboard'\}\}\}" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" tap="action"/>
+				            <FlexBox width="100%" id="box6"/>
+				            </items>
+				        
+				    </FlexBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,22 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="lightsapp2.controller.bed" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Turn Bedroom Loghts on and off">
+				<content>
+				    <Breadcrumbs xmlns="sap.m" currentLocationText="Lights Control" id="breadcrumbs1">
+				        <Link text="Level 1"/>
+				        <Link text="Level 2"/>
+				        </Breadcrumbs>
+				    <RadioButtonGroup xmlns="sap.m" columns="1" id="group0">
+				        <buttons>
+				            <RadioButton text="Turn on" id="button2"/>
+				            <RadioButton text="Turn off" id="button3"/>
+				            </buttons>
+				        
+				    </RadioButtonGroup>
+				    <FlexBox width="100%" id="box0"/><ToggleButton xmlns="sap.m" text="Apply" id="button1" activeIcon="sap-icon://lightbulb" icon="sap-icon://energy-saving-lightbulb" pressed="true" tap="changeicon"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

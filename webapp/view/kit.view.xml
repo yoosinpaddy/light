@@ -1,0 +1,42 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="lightsapp2.controller.kit" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages><Page title="Kitchen Lights">
+				<content>
+				    <Label text="Schedule To turn Lights off" width="100%" id="label0"/>
+				    <sap.ui.layout:ResponsiveSplitter defaultPane="__pane0" xmlns:sap.ui.layout="sap.ui.layout" id="splitter0">
+				        <sap.ui.layout:rootPaneContainer>
+				            <sap.ui.layout:PaneContainer id="container0">
+				                <sap.ui.layout:panes>
+				                    <sap.ui.layout:SplitPane requiredParentWidth="50" id="pane0">
+				                        <sap.ui.layout:content>
+				                            <Panel height="100%" backgroundDesign="Transparent" id="panel0">
+				                                <layoutData>
+				                                    <sap.ui.layout:SplitterLayoutData id="data1"/>
+				                                </layoutData>
+				                            <content>
+				                                <TimePicker xmlns="sap.m" id="picker0"/>
+				                                <FlexBox width="100%" id="box0_1570170445396"/>
+				                                <Button xmlns="sap.m" text="Apply" id="button0_1570170431189" activeIcon="sap-icon://accept" icon="sap-icon://accept"/>
+				                            </content>
+				                            </Panel>
+				                        </sap.ui.layout:content>
+				                    </sap.ui.layout:SplitPane>
+				                    <sap.ui.layout:SplitPane requiredParentWidth="50" id="pane1">
+				                        <sap.ui.layout:content>
+				                            <Panel height="100%" backgroundDesign="Transparent" id="panel1">
+				                                <layoutData>
+				                                    <sap.ui.layout:SplitterLayoutData id="data3"/>
+				                                </layoutData>
+				                            </Panel>
+				                        </sap.ui.layout:content>
+				                    </sap.ui.layout:SplitPane></sap.ui.layout:panes>
+				            </sap.ui.layout:PaneContainer>
+				        </sap.ui.layout:rootPaneContainer>
+				    </sap.ui.layout:ResponsiveSplitter>
+				    <FlexBox width="100%" id="box0"/>
+				    <Button xmlns="sap.m" text="Apply" id="button0"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,30 @@
+<mvc:View controllerName="lightsapp2.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			<Page title="VybesLight">
+				<content>
+					<VBox direction="Column" id="vbox0" justifyContent="Center" width="100%">
+						<items>
+							<Label id="label3" text="Welcome to VybesLights" textAlign="Center" width="100%"/>
+						</items>
+					</VBox>
+					<FlexBox width="100%" id="box0_1570174509859"/>
+					<FlexBox width="100%" id="box0">
+					    <items>
+					        <FlexBox width="100%" id="box1"/>
+					        <Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="140px" height="140px" id="image0"/>
+					        <FlexBox width="100%" id="box2"/>
+					    </items>
+					</FlexBox>
+					<FlexBox width="100%" id="box3">
+					    <items>
+					        <FlexBox width="100%" id="box4"/>
+					        <Button xmlns="sap.m" text="Continue" id="button0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Login'\}\},'tap':\{'navigation':\{'routeName':'Login'\}\}\}" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" tap="action"/>
+					        <FlexBox width="100%" id="box5"/>
+					    </items>
+					</FlexBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

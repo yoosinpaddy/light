@@ -1,0 +1,11 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="lightsapp2.controller.map" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Developers Location">
+				<content>
+				    <Image src="https://mobilemarket.co.ke/wp-content/uploads/2019/10/Screenshot_2019-10-04-Map.png" width="100%" height="100%" id="image0"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
